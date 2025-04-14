@@ -1,0 +1,89 @@
+Basic PyTorch Interview Questions
+1.	What is PyTorch and how does it differ from TensorFlow?
+2.	What are tensors in PyTorch? How do they differ from NumPy arrays?
+3.	How do you create a tensor in PyTorch?
+4.	How is gradient computation handled in PyTorch?
+5.	What is the purpose of requires_grad=True?
+6.	Explain the concept of computational graph in PyTorch.
+7.	What is the use of autograd in PyTorch?
+8.	How is PyTorch's dynamic computational graph different from TensorFlow's static graph (pre-TF 2.x)?
+9.	Explain the purpose of torch.nn.Module.
+10.	How do you define and train a neural network in PyTorch?
+11.	Autoencoders
+12.	Cnn
+13.	Lstm
+14.	rnn
+Intermediate PyTorch Questions
+11.	What are the steps involved in a typical PyTorch training loop?
+12.	How does the DataLoader class work?
+13.	What is the purpose of Dataset class in PyTorch?
+14.	How do you handle GPU/CPU device management in PyTorch?
+15.	What is the use of torch.no_grad()?
+16.	What optimizers are available in PyTorch and how do you choose one?
+17.	How do you implement early stopping in PyTorch?
+18.	What are hooks in PyTorch and how are they used?
+19.	What is the difference between model.eval() and model.train()?
+20.	How do you save and load models in PyTorch?
+Advanced PyTorch Questions
+21.	How would you implement a custom loss function in PyTorch?
+22.	Explain the difference between nn.Sequential and manually defining forward() method.
+23.	How do you fine-tune a pre-trained model in PyTorch?
+24.	What are TorchScript and jit compilation? Why and when would you use them?
+25.	How can you optimize model performance for deployment in PyTorch?
+26.	How would you debug a NaN loss in PyTorch?
+27.	How does mixed precision training work in PyTorch (AMP)?
+28.	How can you implement gradient clipping in PyTorch?
+29.	Describe distributed training with PyTorch (e.g., torch.nn.DataParallel vs DistributedDataParallel).
+30.	What are best practices for memory optimization in PyTorch during training?
+31.	•  What is Deep Learning?
+32.	•  How does Deep Learning differ from traditional Machine Learning?
+33.	•  What is a Neural Network?
+34.	•  Explain the concept of a neuron in Deep Learning
+35.	•  Explain architecture of Neural Networks in a simple way
+36.	•  What is an activation function in a Neural Network?
+37.	•  Name few popular activation functions and describe them
+38.	•  What happens if you do not use any activation functions in a neural network?
+39.	•  Describe how training of basic Neural Networks works
+40.	•  What is Gradient Descent?
+41.	•  What is the function of an optimizer in Deep Learning?
+42.	•  What is backpropagation, and why is it important in Deep Learning?
+43.	•  How is backpropagation different from gradient descent?
+44.	•  Describe what Vanishing Gradient Problem is and its impact on NN
+45.	•  Describe what Exploding Gradients Problem is and its impact on NN
+46.	•  There is a neuron in the hidden layer that always results in an error. What could be the reason?
+47.	•  What do you understand by a computational graph?
+48.	•  What is Loss Function and what are various Loss functions used in Deep Learning?
+49.	•  What is Cross Entropy loss function and how is it called in industry?
+50.	•  Why is Cross-entropy preferred as the cost function for multi-class classification problems?
+51.	•  What is SGD and why is it used in training Neural Networks?
+52.	•  Why does stochastic gradient descent oscillate towards local minima?
+53.	•  How is GD different from SGD?
+54.	•  How can optimization methods like gradient descent be improved? What is the role of the momentum term?
+55.	•  Compare batch gradient descent, minibatch gradient descent, and stochastic gradient descent.
+56.	•  How to decide batch size in deep learning (considering both too small and too large sizes)?
+57.	•  Batch Size vs Model Performance: How does the batch size impact the performance of a deep learning model?
+58.	•  What is Hessian, and how can it be used for faster training? What are its disadvantages?
+59.	•  What is RMSProp and how does it work?
+60.	•  Discuss the concept of an adaptive learning rate. Describe adaptive learning methods
+61.	•  What is Adam and why is it used most of the time in NNs?
+62.	•  What is AdamW and why is it preferred over Adam?
+63.	•  What is Batch Normalization and why it’s used in NN?
+64.	•  What is Layer Normalization, and why it’s used in NN?
+65.	•  What are Residual Connections and their function in NN?
+66.	•  What is Gradient clipping and their impact on NN?
+67.	•  What is Xavier Initialization and why it’s used in NN?
+68.	•  What are different ways to solve Vanishing gradients?
+69.	•  What are ways to solve Exploding Gradients?
+70.	•  What happens if the Neural Network is suffering from Overfitting related to large weights?
+71.	•  What is Dropout and how does it work?
+72.	•  How does Dropout prevent overfitting in NN?
+73.	•  Is Dropout like Random Forest?
+74.	•  What is the impact of Drop Out on the training vs testing?
+75.	•  What are L2/L1 Regularizations and how do they prevent overfitting in NN?
+76.	•  What is the difference between L1 and L2 regularizations in NN?
+77.	•  How do L1 vs L2 Regularization impact the Weights in a NN?
+78.	•  What is the curse of dimensionality in ML or AI?
+79.	•  How deep learning models tackle the curse of dimensionality?
+80.	•  What are Generative Models, give examples?
+
+
