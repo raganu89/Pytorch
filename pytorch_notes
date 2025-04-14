@@ -1,0 +1,82 @@
+Feature	PyTorch	TensorFlow
+Execution	Dynamic	Static (Graph-based)
+Debugging	Easy (Pythonic)	Hard (Graphs)
+GPU Support	Yes (CUDA)	Yes (CUDA & TPU)
+
+
+
+Topic	Key Concept
+Tensors	Multi-dimensional arrays optimized for GPU
+Autograd	Automatic differentiation for deep learning
+Neural Networks	torch.nn.Module for building models
+Training Optimization	Learning rates, batch normalization, dropout
+GPU Acceleration	torch.device("cuda")
+Deployment	Exporting PyTorch models to ONNX
+
+
+
+Pytorch based on torch which was in Lau language sp FB solve two problems of torch 
+
+Pytorch – compatible with python and works on dynamic computational graph (runtime computational graph)
+Pytorch has transcript for model serialization and optimization (platform independent)
+Core features of Pytorch
+1.Tensor computation
+2. GPU Acceleration
+3. Dynamic computational Graph
+4. Automatic differentiation
+5. Distributed Training
+6. Interoperability with other libraries
+Tensors is a multi dimensional array designed for mathematical and computational efficiency
+
+Training process
+
+1.	Forward Pass: Compute the output of the network given an input
+a.	Linear transformation : z = w.x+b
+b.	Activation function
+c.	Loss function (Binary cross entropy loss)
+2.	Calculate the loss function to quantify the error
+3.	Backward loss: Compute gradient of the loss with respect to the parameters
+4.	Update gradients: Adjust the parameters using an optimization algorithm
+
+Autograd:
+Autograd is core component of pytorch that provide automatic differentiation for tensor operations.
+It enables gradient computation which is essential for machine learning models using optimization algorithms like gradient descent.
+
+NN module:
+The torch.nn kodule in pytorch is core library that provides a wide array of classes and functions to designed to help developers build neural networks efficiently and effectively. It abstracts the complexity of creating and training neural networks by offering built-in layers, loss function, activation function, and other utilities enabling you  to focus on designing and experimenting with model architectures.
+Key component of nnmodule
+1.	Layers: nn.Linear(fully connected layer), nn.Conv2d(Convolutional layer),nn.LSTM(recurrent layer)
+2.	Activation functions: Relu, Sigmoid, Tanh
+3.	Los function: CrossEntropy,Llossfunction
+4.	Regularization and Dropout: Dropout,  BatchNorm2d
+
+
+
+Torch.optim module:
+
+Torch.optim is a module in pytorch that provides avariety of optimization algorithms used to update the parameters of your model in training.
+It includes common optimizer like Stochastic gradient descent (SGD),Adam, RMSprop and more.
+It handles weight update efficiently including additional features like learning rate schedulingand weight decay (regularization)
+
+
+Dataset and Dataloader classes:
+Datset and dataloader are core abstractions in pytorch that decouple how you define your data from how you efficiently iterate over it in training loops.
+To load datafrom memory is of Datsetclass and from that loaded class to createbatch is of Dataloader class
+
+Datset Class: It’s a essentially blueprint. when you create a custom dataset, you decide how data is loaded and returned.
+It defines
+__init__() which tells how data should be loaded
+__len__() which return total number of samples
+__getitem__(index) which return the data(and label) at the given index
+Dataloader class wrapsa dataset and handles batching,shuffling and parallel loading for you.
+
+
+How to increase accuracy of model
+
+1.	Use more data set
+2.	Use different optimizer
+3.	Different learning rate
+4.	Different weight initialization
+5.	usedropout
+
+
