@@ -1,0 +1,8 @@
+Activation Function | Range | Use Case | Pros | Cons
+Sigmoid | (0,1)(0, 1)(0,1) | Binary classification | Smooth, outputs probabilities | Vanishing gradients, not zero-centered
+Tanh | (−1,1)(-1, 1)(−1,1) | Hidden layers in many networks | Zero-centered, better gradient propagation than sigmoid | Vanishing gradients
+ReLU | (0,∞)(0, \infty)(0,∞) | Hidden layers (e.g., CNN) | Computationally efficient, no vanishing gradients | Dying ReLU problem, not zero-centered
+Leaky ReLU | (−∞,∞)(-\infty, \infty)(−∞,∞) | Hidden layers (e.g., CNN, RNN) | Fixes dying ReLU, less prone to dead neurons | Not zero-centered, still not optimal in all cases
+ELU | (−α,∞)(-\alpha, \infty)(−α,∞) | Hidden layers, deeper networks | Zero-centered, faster convergence | Computationally expensive
+Softmax | (0,1)(0, 1)(0,1) | Output layer for multiclass classification | Converts logits into probability distribution | Computationally expensive
+Swish | (−∞,∞)(-\infty, \infty)(−∞,∞) | Hidden layers in complex models | Smooth, non-monotonic, better than ReLU in many cases | More computationally expensive than ReLU
