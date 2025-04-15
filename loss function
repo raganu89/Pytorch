@@ -1,0 +1,9 @@
+Task Type | Loss Function | PyTorch Function | Use Case
+Regression | MSE | nn.MSELoss() | Continuous output
+Regression | MAE | nn.L1Loss() | Robust regression
+Regression | Huber Loss | nn.SmoothL1Loss() | Outlier-sensitive regression
+Binary Classification | Binary Cross-Entropy | nn.BCELoss() | Two-class classification
+Binary Classification | BCE with Logits | nn.BCEWithLogitsLoss() | Better numerical stability
+Multiclass Classification | Cross Entropy Loss | nn.CrossEntropyLoss() | Softmax + NLL combined
+Multi-label | Multi-label BCE | nn.BCEWithLogitsLoss() | Multi-label problems
+Segmentation | Dice / IoU / Focal | Custom / from libraries | Image segmentation, detection
